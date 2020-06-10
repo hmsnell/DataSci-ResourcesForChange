@@ -1,10 +1,3 @@
----
-title: "sdsresourcesforchange"
-author: "Hannah Snell"
-date: "6/10/2020"
-output: html_document
----
-
 name: sdsresourcesforchange
 output_dir: docs
 # The website theme "journal" was chosen from
