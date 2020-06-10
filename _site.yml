@@ -1,0 +1,37 @@
+---
+title: "sdsresourcesforchange"
+author: "Hannah Snell"
+date: "6/10/2020"
+output: html_document
+---
+
+name: sdsresourcesforchange
+output_dir: docs
+# The website theme "journal" was chosen from
+# https://bootswatch.com/3/
+output:
+  html_document:
+    toc: yes
+    toc_float: yes
+    toc_depth: 2
+    theme: journal
+    highlight: tango
+    df_print: paged
+    lib_dir: site_libs
+    self_contained: no
+# All fa icons were obtained from https://fontawesome.com/icons?d=gallery
+navbar:
+  title: "Statistical and Data Sciences: Resources for Change"
+  left:
+  - icon: fa-fist-raised fa-fist-raised
+    href: index.html
+  - text: "Reading List"
+    href: readinglist.html
+  - text: "Videos"
+    href: videos.html
+  - text: "Organizations to Support"
+    href: organizations.html
+  right:
+  - text: "Submit Content for this Page"
+    href: contentsubmissions.html
+
