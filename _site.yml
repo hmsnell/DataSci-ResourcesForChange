@@ -7,7 +7,7 @@ output:
     toc: yes
     toc_float: yes
     toc_depth: 2
-    theme: slate
+    theme: cosmo
     highlight: tango
     df_print: paged
     lib_dir: site_libs
