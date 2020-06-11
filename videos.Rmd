@@ -1,7 +1,6 @@
 ---
 title: "Videos"
-author: "Hannah Snell"
-date: "6/10/2020"
+date: "Updated on: `r format(Sys.time(), '%d %B, %Y')`"
 output: html_document
 ---
 
