@@ -1,5 +1,5 @@
 ---
-title: "videos"
+title: "Videos"
 author: "Hannah Snell"
 date: "6/10/2020"
 output: html_document
