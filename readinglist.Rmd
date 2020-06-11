@@ -1,30 +1,19 @@
 ---
-title: "readinglist"
+title: "Our Reading List"
 author: "Hannah Snell"
 date: "6/10/2020"
 output: html_document
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
+# Current News 
 
-## R Markdown
+Here is a list of notable news coverage of the BLM movement.
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+# Book Selections 
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+Here is a list of books that are a great starting point for education on various topics of racism, racial biases, and systematic oppression.
 
-```{r cars}
-summary(cars)
-```
+# Blogs and Articles
 
-## Including Plots
+Here is a list of blogs and articles that amplify the voices of the Black community, give firsthand accounts, and provide uniqe perspectives about systemic oppression.
 
-You can also embed plots, for example:
-
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
-
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
