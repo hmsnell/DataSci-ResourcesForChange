@@ -1,12 +1,13 @@
 ---
 title: "Content Submissions"
 date: "Updated on: `r format(Sys.time(), '%d %B, %Y')`"
-output: html_document
+html_document:
+    toc: false
 ---
 
 Any content submission information to this page will remain confidential and will only be  assessed to ensure that authentic and representative content is displayed on this site.
 
-Submit Content for this Page 
+# Submit Content for this Page 
 
 We strongly encourage the submission of additional content for this page. If you have content that you would like to show here, please fill out the form below: 
 
