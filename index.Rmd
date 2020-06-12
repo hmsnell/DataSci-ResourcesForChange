@@ -5,23 +5,23 @@ output: html_document
 ---
 
 
-</div>
+$~$
+$~$
 
 
 # Aims of this Page 
 
-As your peers and fellow students at Smith College, we wanted to offer an easy tool to access resources to educate yourself and others about racism, racial biases, and the oppression of the Black community. The main focus of this site is to provide STEM-focused recources, but we will include any content that amplifies the voices of the Black community. 
+<p>As your peers and fellow students at Smith College, we wanted to offer an easy tool to access resources to educate yourself and others about racism, racial biases, and the oppression of the Black community. The main focus of this site is to provide STEM-focused recources, but we will include any content that amplifies the voices of the Black community. 
 
-
-</div>
+$~$
+$~$
 
 # Available Resources
 
 This page contains resources in the context of reading (through books available for purchase and online articles/blogs), video content, and organizations that can be supported via petition signing, social media amplification, and donations. We hope you can find a particular resource medium that best fits your learning needs here. 
 
-
-</div>
-
+$~$
+$~$
 
 # Content Support and Suggestions 
 
