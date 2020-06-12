@@ -7,14 +7,14 @@ output:
     toc: yes
     toc_float: yes
     toc_depth: 2
-    theme: sandstone
-    highlight: tango
+    theme: spacelab
+    highlight: haddock
     df_print: paged
     lib_dir: site_libs
     self_contained: no
 # All fa icons were obtained from https://fontawesome.com/icons?d=gallery
 navbar:
-  title: "Statistical and Data Sciences: Resources for Change"
+  title: "SDS: Resources for Change"
   left:
   - icon: fa-fist-raised fa-fist-raised
     href: index.html
