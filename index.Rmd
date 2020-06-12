@@ -2,7 +2,7 @@
 title: "Welcome to the Resources for Change Homepage"
 date: "Updated on: `r format(Sys.time(), '%d %B, %Y')`"
 html_document:
-    toc: false
+    toc: no
 ---
 
 $~$

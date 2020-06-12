@@ -2,7 +2,7 @@
 title: "Videos"
 date: "Updated on: `r format(Sys.time(), '%d %B, %Y')`"
 html_document:
-    toc: false
+    toc: no
 ---
 
 $~$
