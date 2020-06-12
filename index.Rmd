@@ -4,30 +4,43 @@ date: "Updated on: `r format(Sys.time(), '%d %B, %Y')`"
 output: html_document
 ---
 
+$~$
+$~$
 
-</div>
+<img src = https://static01.nyt.com/images/2019/12/08/business/06View-illo/06View-illo-superJumbo.jpg height = 450>
+
+$~$$~$
 
 
-# Aims of this Page 
+# About This Page
 
-As your peers and fellow students at Smith College, we wanted to offer an easy tool to access resources to educate yourself and others about racism, racial biases, and the oppression of the Black community. The main focus of this site is to provide STEM-focused recources, but we will include any content that amplifies the voices of the Black community. 
+Racism and bias exist everywhere, though it is not always obvious at first glance. As your peers in Smith College Statistical and Data Sciences, we thought it would be valuable to share resources with you all that focus specifically on education around how these problems operate within--and sometimes are exacerbated by--the data science community. 
 
+$~$
 
-</div>
 
 # Available Resources
 
-This page contains resources in the context of reading (through books available for purchase and online articles/blogs), video content, and organizations that can be supported via petition signing, social media amplification, and donations. We hope you can find a particular resource medium that best fits your learning needs here. 
+In order to promote education and change within the data science community, we have provided a variety of different resources focused primarily on the concepts of: 
+
+1) Algorithmic bias
+
+2) Data in the criminal justice system
+
+3) Diversity within the data science community
+
+On this page, you can find readings (both books and articles of varying levels of technicality), video content, and a list of organizations working to promote change on these issues. We hope you can find a particular resource medium that best fits your learning needs here. 
 
 
-</div>
-
+$~$
 
 # Content Support and Suggestions 
 
-Most importantly, we offer a content submission page where either a new medium can be suggested for content submission, or individual pieces of content can be submitted. This page serves as a potential baseline for all of our education on these topics, so we strongly encourage the submission of other resources to enhance this experience. 
+We want this educational process to be interactive. In order to promote this, we have create a content submission form where you can suggest additional resources that you think would be meaningful to share with your peers.
 
 Additionally, if you believe that a topic has not been presented in the best manner on this site, please let us know immediately, as it is easy to make changes and updates to ensure the content shared here is authentic. 
+
+$~$
 
 ### _We hope you bookmark, share, and reference this site often._ 
 

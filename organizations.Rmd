@@ -4,14 +4,62 @@ date: "Updated on: `r format(Sys.time(), '%d %B, %Y')`"
 output: html_document
 ---
 
-# Donating
+$~$
 
-Here is a list of organizations currently accepting donations to support Black lives and communities. 
+If you're looking for some organizations to support, here are some excellent ones. The groups listed below either use data to promote equality or provide opportunities to increase and support diversity in the mathematics/data science world. If you have the means, consider donating or volunteering! 
 
-# Petitions 
+$~$
 
-Here is a list of petitions that can be signed in support for various causes benefitting the Black community.
+The **Algorithmic Justice League** combines “art and research to illuminate the social implications and harms of AI.” \
+https://www.ajlunited.org/
 
-# Volunteering 
+$~$
 
-Here is a list of places that are looking for volunteer time in support of their cause. 
+**Black Girls Code** works “to increase the number of women of color in the digital space by empowering girls of color ages 7 to 17 to become innovators in STEM fields, leaders in their communities, and builders of their own futures through exposure to computer science and technology.” \
+https://www.blackgirlscode.com
+
+$~$
+
+**Black in AI** is an “initiative creating a space for sharing ideas, fostering collaborations, and discussing initiatives to increase the presence of Black individuals in the field of AI.” \
+https://blackinai.github.io
+
+$~$
+
+**Campaign Zero** focuses on data analysis related to policing practices, working to use data to identify and promote legislation to end police violence. \
+https://www.joincampaignzero.org/#vision
+
+$~$
+
+**Code the Dream** offers free intensive training in software development to people from diverse low-income backgrounds. \
+https://www.codethedream.org
+
+$~$
+
+
+**Data For Black Lives** uses data science to try and “create concrete and measurable change in the lives of Black people.” \
+http://d4bl.org
+
+$~$
+
+
+**The Math Alliance** is a community working to “increase the number of doctoral degrees in the mathematical sciences among groups that have been traditionally underrepresented in those fields,” help underrepresented students get placed into better programs and find jobs as professors, and foster a diverse workforce in the mathematical sciences. \
+https://mathalliance.org/goals/
+
+$~$
+
+**Mathematically Gifted and Black** works to “highlight the work and lives of established mathematicians in the African Diaspora” and “support the next generation of these mathematicians.” Donations go directly to supporting predoctoral Black students with pursuing career goals in math. \
+https://mathematicallygiftedandblack.com
+
+$~$
+
+**Rewriting the Code** works to provide a community for Black women in tech to share experiences and perspectives, gain career advice, and connect with companies to find work. \
+https://rewritingthecode.org/black-wings/
+
+$~$
+
+**We Rep STEM** works “to promote a love of learning while celebrating underrepresented groups in the STEM community.” \
+https://werepstem.com
+
+$~$
+
+

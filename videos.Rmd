@@ -4,10 +4,28 @@ date: "Updated on: `r format(Sys.time(), '%d %B, %Y')`"
 output: html_document
 ---
 
-# Videos 
+$~$
 
-Here is a list of videos that show more specific issues of racial bias in the data science world. 
+Here is a list of videos that show more specific issues of racial bias in the data science world:
 
-# Movies 
+$~$
 
-Here is a list of movies.
+**Crash Course on Algorithmic Bias and Fairness**:
+https://www.youtube.com/watch?v=gV0_raKR2UQ&feature=youtu.be
+
+$~$
+
+**TED Talk: “How I’m fighting bias in algorithms” by Joy Buolamwini**:
+https://www.youtube.com/watch?v=UG_X_7g63rY&feature=youtu.be
+
+$~$
+
+**TEDx Talk: “The danger of predictive algorithms in criminal justice” by Hany Farid**:
+https://www.youtube.com/watch?v=p-82YeUPQh0&feature=youtu.be
+
+$~$
+
+**Talk on biased search engines by Safiya Noble**:
+https://www.youtube.com/watch?v=iRVZozEEWlE
+
+$~$

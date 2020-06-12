@@ -4,15 +4,152 @@ date: "Updated on: `r format(Sys.time(), '%d %B, %Y')`"
 output: html_document
 ---
 
-# Current News 
+$~$
 
-Here is a list of notable news coverage of the BLM movement.
 
 # Book Selections 
 
 Here is a list of books that are a great starting point for education on various topics of racism, racial biases, and systematic oppression.
 
+$~$
+$~$
+
+
+### *Weapons of Math Destruction*  by Cathy O’Neil
+
+<img src="https://update.lib.berkeley.edu/wp-content/uploads/2018/08/weapons_post.jpg" height = 300>
+
+
+This book is an excellent starter to the field of algorithmic bias, discussing the topic in general--with a focus on the dangers of hidden bias--and then proceeding into fascinating case studies from a variety of fields (examples include college rankings, hiring processes, and credit scores). If you want a simple overview that does not go into too much detail about any one particular field, this would be a great read for you. If you want to delve into more detail, it might not be the right fit.
+
+$~$
+$~$
+
+### *Automating Inequality*  by Virginia Eubanks
+$~$
+
+<img src="https://media.npr.org/assets/bakertaylor/covers/a/automating-inequality/9781250074317_custom-a87af6fbd05e83e9a17b509ab7f4001998eb713d-s300-c85.jpg" height = 300>
+
+$~$
+
+This book also focuses on case studies, though each is covered in much more extensive detail than anything you would find in Weapons of Math Destruction. The three topics covered are: 1) An Indiana algorithm that denies huge numbers of people of healthcare, food stamps, and cash benefits over tiny errors. 2) A Los Angeles algorithm used to determine which homeless people are prioritized for permanent housing. 3) A Pittsburgh child welfare algorithm that attempts to predict when children might be future victims of abuse, which leads to families being needlessly ripped apart. If you’re interested in detailed descriptions of the history, operation, and policy regarding algorithms, this would be an excellent book to read.
+
+$~$
+$~$
+
+### *The Rise of Big Data Policing*  by Andrew Ferguson
+$~$
+
+<img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1492882912l/34791155.jpg" height = 300>
+
+$~$
+
+If you’re interested in focusing on data for policing specifically, this book provides an excellent overview of the ways in which police use big data, the history of that use, and the dangers of the adoption of advanced technologies by the police force, including discussions of bias and invasion of privacy. Topics that will be covered include: mass surveillance, facial recognition, social media monitoring, and algorithms that predict crime.
+
+$~$
+$~$
+
+### *Biased*  by Jennifer Eberhardt
+$~$
+
+<img src="https://web.stanford.edu/~eberhard/biased-3d.png" height = 300>
+$~$
+
+If you’re looking for an overview that focuses a lot on solutions and actions you can take, this might be a good read. Biased discusses how racial bias infiltrates all parts of our society -- neighborhoods, schools, offices, the criminal justice system, etc -- and what we can do to address it. It is less algorithm/data focused than some of the other books mentioned here, but still addresses the topic throughout.
+
+$~$
+$~$
+
+
+
+
+
 # Blogs and Articles
 
-Here is a list of blogs and articles that amplify the voices of the Black community, give firsthand accounts, and provide uniqe perspectives about systemic oppression.
+Here is a list of blogs and articles that amplify the voices of the Black community, give firsthand accounts, and provide uniqe perspectives about systemic oppression. 
+
+$~$
+
+
+### Non-technical overviews and examples of algorithmic bias
+
+$~$
+
+
+An Excellent Overview of Algorithmic Bias: https://www.brookings.edu/research/algorithmic-bias-detection-and-mitigation-best-practices-and-policies-to-reduce-consumer-harms/
+
+$~$
+
+Law Review on “Big Data’s Disparate Impact”:
+https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2477899
+
+$~$
+
+Case Studies in the Use of Big Data (Discusses problems, ways big data could be used to solve them, and challenges--often bias related--that come with doing so):
+https://obamawhitehouse.archives.gov/sites/default/files/microsites/ostp/2016_0504_data_discrimination.pdf
+
+$~$
+
+Different Types of Bias, And How to Reduce Them:
+https://towardsdatascience.com/5-types-of-bias-how-to-eliminate-them-in-your-machine-learning-project-75959af9d3a0
+
+$~$
+
+Example of a Biased Algorithm -- Medical Referrals
+https://www.nature.com/articles/d41586-019-03228-6#ref-CR1
+
+$~$
+
+Example of a Biased Algorithm -- Google Search
+https://time.com/5209144/google-search-engine-algorithm-bias-racism/ 
+
+$~$
+
+### Technical explanations of bias
+
+$~$
+
+
+Measuring Fairness of Algorithms:
+https://towardsdatascience.com/a-tutorial-on-fairness-in-machine-learning-3ff8ba1040cb
+
+$~$
+
+Machine Learning Fairness in International Development (See Ch 3 & 4):
+https://d-lab.mit.edu/sites/default/files/inline-files/Exploring_fairness_in_machine_learning_for_international_development_28022020_pages.pdf
+
+
+$~$
+
+
+### Data in the criminal justice system
+
+$~$
+
+
+Example of a Biased Algorithm -- Criminal Sentencing: 
+https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing
+
+$~$
+
+Different Ways Police Use Big Data and Related Concerns:
+https://www.annualreviews.org/doi/pdf/10.1146/annurev-criminol-062217-114209
+
+$~$
+
+Law Review – An Analysis of Big Data’s Use for Predictive Policing:
+https://openscholarship.wustl.edu/cgi/viewcontent.cgi?article=6306&context=law_lawreview
+
+$~$
+
+Law Review – Challenging Racist Predictive Policing Algorithms Under the Equal Protection Clause
+https://www.nyulawreview.org/wp-content/uploads/2019/06/NYULawReview-94-3-ODonnell.pdf
+
+$~$
+
+George Floyd Protests -- Facial Recognition
+https://www.verdict.co.uk/facial-recognition-technology-racist-police-protests/
+
+$~$
+
 
