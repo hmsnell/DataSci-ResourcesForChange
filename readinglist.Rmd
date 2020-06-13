@@ -97,6 +97,11 @@ https://towardsdatascience.com/5-types-of-bias-how-to-eliminate-them-in-your-mac
 
 $~$
 
+Bias detectives: the researchers trying to make algorithms fair
+https://www.nature.com/articles/d41586-018-05469-3
+
+$~$
+
 Example of a Biased Algorithm -- Medical Referrals
 https://www.nature.com/articles/d41586-019-03228-6#ref-CR1
 

@@ -1,5 +1,5 @@
 ---
-title: "Videos"
+title: "Videos & Podcasts"
 date: "Updated on: `r format(Sys.time(), '%d %B, %Y')`"
 html_document:
     toc: no
@@ -7,26 +7,121 @@ html_document:
 
 $~$
 
+# Videos
+
 Here is a list of videos that show more specific issues of racial bias in the data science world:
 
 $~$
 
-**Crash Course on Algorithmic Bias and Fairness**:
-https://www.youtube.com/watch?v=gV0_raKR2UQ&feature=youtu.be
+### Crash Course on Algorithmic Bias and Fairness
 
 $~$
 
-**TED Talk: “How I’m fighting bias in algorithms” by Joy Buolamwini**:
-https://www.youtube.com/watch?v=UG_X_7g63rY&feature=youtu.be
+<iframe src="https://www.youtube.com/embed/gV0_raKR2UQ" 
+        allowfullscreen="allowfullscreen"
+        mozallowfullscreen="mozallowfullscreen" 
+        msallowfullscreen="msallowfullscreen" 
+        oallowfullscreen="oallowfullscreen" 
+        webkitallowfullscreen="webkitallowfullscreen"
+        frameborder="0" 
+        allow="accelerometer; autoplay; encrypted-media;     
+        gyroscope; picture-in-picture"
+        width="560" height="315"> </iframe> 
+
+
+\
+$~$
+
+
+### TED Talk: “How I’m fighting bias in algorithms” by Joy Buolamwini:
 
 $~$
 
-**TEDx Talk: “The danger of predictive algorithms in criminal justice” by Hany Farid**:
-https://www.youtube.com/watch?v=p-82YeUPQh0&feature=youtu.be
+<iframe src="https://www.youtube.com/embed/UG_X_7g63rY" allowfullscreen="allowfullscreen"
+        mozallowfullscreen="mozallowfullscreen" 
+        msallowfullscreen="msallowfullscreen" 
+        oallowfullscreen="oallowfullscreen" 
+        webkitallowfullscreen="webkitallowfullscreen"
+        frameborder="0" 
+        allow="accelerometer; autoplay; encrypted-media;     
+        gyroscope; picture-in-picture"
+        width="560" height="315"> </iframe> 
+
+
+\
+$~$
+
+
+
+### TEDx Talk: “The danger of predictive algorithms in criminal justice” by Hany Farid:
 
 $~$
 
-**Talk on biased search engines by Safiya Noble**:
-https://www.youtube.com/watch?v=iRVZozEEWlE
+
+<iframe src="https://www.youtube.com/embed/p-82YeUPQh0" allowfullscreen="allowfullscreen"
+        mozallowfullscreen="mozallowfullscreen" 
+        msallowfullscreen="msallowfullscreen" 
+        oallowfullscreen="oallowfullscreen" 
+        webkitallowfullscreen="webkitallowfullscreen"
+        frameborder="0" 
+        allow="accelerometer; autoplay; encrypted-media;     
+        gyroscope; picture-in-picture"
+        width="560" height="315"> </iframe> 
+
+
+\
+$~$
+
+
+### Talk on biased search engines by Safiya Noble:
+
 
 $~$
+
+<iframe src="https://www.youtube.com/embed/iRVZozEEWlE" allowfullscreen="allowfullscreen"
+        mozallowfullscreen="mozallowfullscreen" 
+        msallowfullscreen="msallowfullscreen" 
+        oallowfullscreen="oallowfullscreen" 
+        webkitallowfullscreen="webkitallowfullscreen"
+        frameborder="0" 
+        allow="accelerometer; autoplay; encrypted-media;     
+        gyroscope; picture-in-picture"
+        width="560" height="315"> </iframe> 
+        
+
+\
+$~$
+
+
+# Podcasts
+
+$~$
+
+### Recruiting the Future w/ Matt Alder -- Ep 164: Algorithmic Bias in Hiring
+
+[Listen here](https://recruitingfuture.com/2019/01/ep-164-algorithmic-bias-in-hiring/)
+
+$~$
+
+### Cathy O'Neil Talks Biased Algorithms
+
+[Listen here](https://www.wnycstudios.org/podcasts/otm/segments/biased-algorithms-biased-world)
+
+$~$
+
+### How we transferred our biases into our machines and what we can do about it
+
+[Listen here](https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/358297613&color=ff5500)
+
+$~$
+
+### The Rise of Big Data Policing with Andrew Ferguson
+
+[Listen here](https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/369016508&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true)
+
+$~$
+
+### Machine Learning Bias and Fairness with Timnit Gebru and Margaret Mitchell
+
+[Listen here](https://www.gcppodcast.com/post/episode-114-machine-learning-bias-and-fairness-with-timnit-gebru-and-margaret-mitchell/)
+
