@@ -7,7 +7,7 @@ html_document:
 
 $~$
 
-If you're looking for some organizations to support, here are some excellent ones. The groups listed below either use data to promote equality or provide opportunities to increase and support diversity in the mathematics/data science world. If you have the means, consider donating or volunteering! 
+If you're looking for some organizations to support or learn more about, here are some excellent ones. The groups listed below either use data to promote equality or provide opportunities to increase and support diversity in the mathematics/data science world. If you have the means, consider donating or volunteering! 
 
 $~$
 

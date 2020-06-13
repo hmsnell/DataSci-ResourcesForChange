@@ -9,8 +9,6 @@ $~$
 
 # Videos
 
-Here is a list of videos that show more specific issues of racial bias in the data science world:
-
 $~$
 
 ### Crash Course on Algorithmic Bias and Fairness
@@ -92,6 +90,35 @@ $~$
 \
 $~$
 
+### TEDx Talk: Mapping Police Violence by Samuel Sinyangwe (founder of Campaign Zero)
+
+<iframe src="https://www.youtube.com/embed/zVzGrj8HtcY" allowfullscreen="allowfullscreen"
+        mozallowfullscreen="mozallowfullscreen" 
+        msallowfullscreen="msallowfullscreen" 
+        oallowfullscreen="oallowfullscreen" 
+        webkitallowfullscreen="webkitallowfullscreen"
+        frameborder="0" 
+        allow="accelerometer; autoplay; encrypted-media;         gyroscope; picture-in-picture"
+        width="560" height="315"> </iframe> 
+
+
+
+$~$
+
+### "Abolish Big Data" Talk by Yeshimabeit Milner (founder of Data for Black Lives)
+
+<iframe src="https://www.youtube.com/embed/wR5i6qXJH4o" allowfullscreen="allowfullscreen"
+        mozallowfullscreen="mozallowfullscreen" 
+        msallowfullscreen="msallowfullscreen" 
+        oallowfullscreen="oallowfullscreen" 
+        webkitallowfullscreen="webkitallowfullscreen"
+        frameborder="0" 
+        allow="accelerometer; autoplay; encrypted-media;         gyroscope; picture-in-picture"
+        width="560" height="315"> </iframe> 
+
+
+
+$~$
 
 # Podcasts
 

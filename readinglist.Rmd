@@ -11,7 +11,6 @@ $~$
 
 # Book Selections 
 
-Here is a list of books that are a great starting point for education on various topics of racism, racial biases, and systematic oppression.
 
 $~$
 $~$
@@ -63,12 +62,20 @@ $~$
 $~$
 
 
+### *Algorithms of Oppression* by Safiya Umoja Noble
 
+$~$
 
+<img src="https://urpe.files.wordpress.com/2018/02/9781479837243_full.jpg" height = 300>
+
+$~$
+
+This book challenges the idea that popular search engines treat all ideas, identities, and activities equally. Through a focused look at Google search, Safiya Noble argues that private interests, combined with the almost-monopoly status of Google search leads to biased search algorithms that privilage white indiviuals while discriminating against people--and particularly women--of color.
+
+$~$
 
 # Blogs and Articles
-
-Here is a list of blogs and articles that amplify the voices of the Black community, give firsthand accounts, and provide uniqe perspectives about systemic oppression. 
+ 
 
 $~$
 
@@ -101,6 +108,12 @@ Bias detectives: the researchers trying to make algorithms fair
 https://www.nature.com/articles/d41586-018-05469-3
 
 $~$
+
+"Out Data Bodies -- Human Rights and Data Justice" Blog:
+https://www.odbproject.org/blog/
+
+$~$
+
 
 Example of a Biased Algorithm -- Medical Referrals
 https://www.nature.com/articles/d41586-019-03228-6#ref-CR1
@@ -154,9 +167,18 @@ https://www.nyulawreview.org/wp-content/uploads/2019/06/NYULawReview-94-3-ODonne
 
 $~$
 
-George Floyd Protests -- Facial Recognition
+Law Review – Dirty Data, Bad Predictions: How Civil Rights Violations Impact Police Data, Predictive Policing Systems, and Justice
+https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3333423
+
+$~$
+
+George Floyd Protests - Facial Recognition
 https://www.verdict.co.uk/facial-recognition-technology-racist-police-protests/
 
 $~$
+
+$~$
+How the Movement for Black Lives Is Using Data to Transform Cities
+https://nextcity.org/daily/entry/how-the-movement-for-black-lives-will-transform-america-cities
 
 

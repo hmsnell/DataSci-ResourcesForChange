@@ -1,5 +1,5 @@
 ---
-title: "Content Submissions"
+title: "Contact Us!"
 date: "Updated on: `r format(Sys.time(), '%d %B, %Y')`"
 html_document:
     toc: no
