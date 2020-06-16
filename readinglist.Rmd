@@ -76,14 +76,11 @@ $~$
 
 # Blogs and Articles
  
-
 $~$
-
 
 ### Non-technical overviews and examples of algorithmic bias
 
 $~$
-
 
 An Excellent Overview of Algorithmic Bias: https://www.brookings.edu/research/algorithmic-bias-detection-and-mitigation-best-practices-and-policies-to-reduce-consumer-harms/
 
@@ -125,10 +122,14 @@ https://time.com/5209144/google-search-engine-algorithm-bias-racism/
 
 $~$
 
-### Technical explanations of bias
+Social Inequality Will Not Be Solved By an App -- by author Safiya Umoja Noble; an excerpt from her recent work titled _Algorithms of Oppression_
+https://www.wired.com/story/social-inequality-will-not-be-solved-by-an-app/ 
 
 $~$
 
+### Technical Explanations of Bias
+
+$~$
 
 Measuring Fairness of Algorithms:
 https://towardsdatascience.com/a-tutorial-on-fairness-in-machine-learning-3ff8ba1040cb
@@ -138,14 +139,11 @@ $~$
 Machine Learning Fairness in International Development (See Ch 3 & 4):
 https://d-lab.mit.edu/sites/default/files/inline-files/Exploring_fairness_in_machine_learning_for_international_development_28022020_pages.pdf
 
-
 $~$
 
-
-### Data in the criminal justice system
+### Data in the Criminal Justice System
 
 $~$
-
 
 Example of a Biased Algorithm -- Criminal Sentencing: 
 https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing
@@ -177,7 +175,6 @@ https://www.verdict.co.uk/facial-recognition-technology-racist-police-protests/
 
 $~$
 
-$~$
 How the Movement for Black Lives Is Using Data to Transform Cities
 https://nextcity.org/daily/entry/how-the-movement-for-black-lives-will-transform-america-cities
 

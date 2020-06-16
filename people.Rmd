@@ -1,0 +1,45 @@
+---
+title: "Data Scientists You Should Know"
+date: "Updated on: `r format(Sys.time(), '%d %B, %Y')`"
+output: html_document
+---
+
+# Yeshimabeit Milner 
+$~$
+<img src = https://fellows.echoinggreen.org/wp-content/uploads/2019/11/yeshimilner-profile-1-e1580395922382.jpg height = 250> 
+$~$
+
+Yeshimabeit Milner is a co-founder and executive director of Data for Black Lives. Starting as a high school student in Miami FL, Milner began organizing and campaigning against the school-to-prison pipeline via Power U Center for Social Change, which sparked her passion and drive for creating and sustaining large-scaled social change. On top of running Data for Black Lives, she leads in other notable organizations such as Color of Change and OrganizeFor.\n
+$~$
+
+Read more about her work here: http://d4bl.org/about.html
+$~$
+
+# David Blackwell 
+$~$
+<img src = https://math.illinois.edu/sites/default/files/inline-images/blackwell.png height = 250>
+$~$
+
+David Blackwell (1919-2010) was an American statistician that made major contributions to the fields of probability, information thoery, game theory, and Bayesian statistics. He was the first African American to be elected to the National Academy of Sciences.\n
+$~$
+
+Read his biography: https://www.blackpast.org/african-american-history/blackwell-david-harold-1919-2010/
+$~$
+
+Read about his notable theory of duels:  http://www.cs.appstate.edu/~sjg/ncctm/activities/blackwell.htm#:~:text=While%20working%20at%20Rand%2C%20Blackwell,each%20having%20a%20single%20bullet.&text=While%20at%20Berkeley%2C%20Blackwell%20served,Department%20from%201956%20to%201961.
+
+# Talithia Williams 
+$~$ 
+<img src =  https://www.hmc.edu/mathematics/wp-content/uploads/sites/49/2017/06/williams-talithia-681x1024.jpeg; height = 250>
+$~$
+
+Dr. Talithia Williams is a statistician and mathematician that specializes in demystifying spatial and temporal data provided from the WHO. She is the first Black woman to achieve tenure at Harvey Mudd College. Her current research is centered around building a cataract model to predict cataract surgical rates in Africa.\n
+$~$
+
+Visit her personal website here: https://www.talithiawilliams.com/ \n
+$~$
+
+Watch Dr. Williams' TED Talk here: https://www.ted.com/talks/talithia_williams_own_your_body_s_data \n
+$~$
+
+Read her book about women in STEM here: https://www.talithiawilliams.com/book

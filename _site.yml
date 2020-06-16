@@ -24,6 +24,8 @@ navbar:
     href: videos.html
   - text: "Organizations to Support"
     href: organizations.html
+  - text: "Notable People"
+    href: people.html
   right:
   - text: "Contact Us!"
     href: contentsubmissions.html
