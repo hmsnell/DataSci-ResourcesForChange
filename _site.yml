@@ -4,8 +4,8 @@ output_dir: docs
 # https://bootswatch.com/3/
 output:
   html_document:
-    toc: yes
-    toc_float: yes
+    toc: no
+    toc_float: no
     toc_depth: 2
     theme: spacelab
     highlight: haddock
@@ -14,7 +14,7 @@ output:
     self_contained: no
 # All fa icons were obtained from https://fontawesome.com/icons?d=gallery
 navbar:
-  title: "SDS: Resources for Change"
+  title: "Data Science Resources for Change"
   left:
   - icon: fa-fist-raised fa-fist-raised
     href: index.html
@@ -26,7 +26,4 @@ navbar:
     href: organizations.html
   - text: "Notable People"
     href: people.html
-  right:
-  - text: "Contact Us!"
-    href: contentsubmissions.html
 

@@ -1,14 +1,10 @@
 ---
-title: "Welcome to the Resources for Change Homepage"
+title: "Welcome to Data Science Resources for Change"
 date: "Updated on: `r format(Sys.time(), '%d %B, %Y')`"
 html_document:
     toc: no
 ---
 
-$~$
-$~$
-
-<img src = https://static01.nyt.com/images/2019/12/08/business/06View-illo/06View-illo-superJumbo.jpg height = 450>
 
 
 $~$
@@ -22,9 +18,13 @@ Racism and bias exist everywhere, though it is not always obvious at first glanc
 
 This is particularly true in the field of data science. Due to their mathematical nature, data and algorithms are often treated as objective and unbiased when--in many cases--they are not. It can be easy to put trust in them; many people blindly support algorithms with little consideration of how they were created and how they operate in society. 
 
-In order to be thoughtful, effective, and inclusive data scientists, we believe it is important to understand the ways in which bias can play a dangerous role within our field, to understand the ways in which data can be used to either reinforce/exacerbate or fight oppression, and to support the inclusion of voices of color within the community. 
+**In order to be thoughtful, effective, and inclusive data scientists, we believe it is important to understand the ways in which bias can play a dangerous role within our field, to understand the ways in which data can be used to either reinforce/exacerbate or fight oppression, and to support the inclusion of voices of color within the community.** 
 
-This site is meant to serve as a resource for Smithies of all backgrounds who are interested in pursuing a future in statistical data sciences. Here, you can find a variety of different materials, from books and articles to videos, podcasts, and organizations to support, on the following topics revolving around data and race:
+Although these issues play a significant role in the discussion of data science in the media, very few classes at the undergraduate level cover them in detail. The few courses and projects we have been a part of that covered some of these topics have been fascinating and impactful to the way that we think about data science and our roles within the field. We wanted to create this site as a way to increase exposure to these ideas, spark constructive discussions, and help provide our fellow Smithies with knowledge and tools that can provide benefits long after graduation!
+
+**This site is meant to serve as a resource for Smithies of all backgrounds who are interested in pursuing a future in statistical data sciences and want to learn more about these topics.** 
+
+We have started a collection of different materials, from books and articles to videos, podcasts, and organizations to support, on the following topics revolving around data and race:
 
 1) Algorithmic bias
 
@@ -35,14 +35,31 @@ This site is meant to serve as a resource for Smithies of all backgrounds who ar
 
 For those who are just beginning to dip their toes into these ideas, we hope that this site will provide a starting point to your educational journey, encouraging you to seek out further information and think about these ideas more in the future. For those who live these struggles every day, we hope that you can find something here you have not read or seen before, but also that you can find value through sharing these resources with others. 
 
-As young, white students with next to no personal experience in this area, we do not want our voices to drown out those of others who may have valuable perspectives. We have attempted to promote content and organizations created by a diverse group of voices, but also acknowledge that our knowledge on the topic is limited. As such, we believe it is important for this educational process to be interactive. To promote this goal, we have create a content submission form where you can suggest additional resources that you think would be meaningful to share with your peers.
+As young, white students with next to no personal experience in this area, we do not want our voices to drown out those of others who may have valuable perspectives. We have attempted to promote content and organizations created by a diverse group of voices, but also acknowledge that our knowledge on the topic is limited. 
 
-Additionally, we understand that our experiences may affect the way we choose to present information, perhaps resulting in an unbalanced perspective. If you have any suggestions for how to improve the way any of our content is shared, please let us know immediately, as it is easy to make changes and updates to ensure the content shared here is authentic. 
+**We believe it is important for this educational process to be interactive and to include the voices of marginalized students within our community.** To promote this goal, we have create a content submission form where you can suggest additional resources that you think would be meaningful to share with your peers.
 
 $~$
 
+### Suggest a resource here!
+
+https://forms.gle/w76mrUjqKtcojfCZA
+
+$~$
+
+**Additionally, we understand that our experiences may affect the way we choose to present information, perhaps resulting in an unbalanced perspective.** We will happily welcome your feedback on how to improve this site and ensure that the content shared here is authentic.
+
+$~$
+
+### Share feedback here!
+
+https://forms.gle/TXNiin6KYNLSG7Rp9
+
+$~$
+
+
 -- *Audrey Bertin and Hannah Snell, '21*
-[Creators of SDS: Resources for Change]
+[Creators of Data Science Resources for Change]
 
 
 $~$
