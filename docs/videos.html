@@ -13,47 +13,42 @@
 
 <title>Videos &amp; Podcasts</title>
 
-<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<script src="site_libs/header-attrs-2.25/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/spacelab.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet" />
 <script src="site_libs/pagedtable-1.1/js/pagedtable.js"></script>
-<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
-<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
-
-
-
+<link href="site_libs/font-awesome-6.4.2/css/all.min.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.4.2/css/v4-shims.min.css" rel="stylesheet" />
 
 <style type="text/css">
-h1 {
-  font-size: 34px;
-}
-h1.title {
-  font-size: 38px;
-}
-h2 {
-  font-size: 30px;
-}
-h3 {
-  font-size: 24px;
-}
-h4 {
-  font-size: 18px;
-}
-h5 {
-  font-size: 16px;
-}
-h6 {
-  font-size: 12px;
-}
-.table th:not([align]) {
-  text-align: left;
-}
-</style>
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+
+
+
+
+
 
 
 
@@ -63,10 +58,6 @@ h6 {
   max-width: 940px;
   margin-left: auto;
   margin-right: auto;
-}
-code {
-  color: inherit;
-  background-color: rgba(0, 0, 0, 0.04);
 }
 img {
   max-width:100%;
@@ -83,40 +74,16 @@ button.code-folding-btn:focus {
 summary {
   display: list-item;
 }
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
 </style>
 
 
 <style type="text/css">
-/* padding for bootstrap navbar */
-body {
-  padding-top: 52px;
-  padding-bottom: 40px;
-}
-/* offset scroll position for anchor links (for fixed navbar)  */
-.section h1 {
-  padding-top: 57px;
-  margin-top: -57px;
-}
-.section h2 {
-  padding-top: 57px;
-  margin-top: -57px;
-}
-.section h3 {
-  padding-top: 57px;
-  margin-top: -57px;
-}
-.section h4 {
-  padding-top: 57px;
-  margin-top: -57px;
-}
-.section h5 {
-  padding-top: 57px;
-  margin-top: -57px;
-}
-.section h6 {
-  padding-top: 57px;
-  margin-top: -57px;
-}
 .dropdown-submenu {
   position: relative;
 }
@@ -144,7 +111,7 @@ body {
   margin-right: -10px;
 }
 .dropdown-submenu:hover>a:after {
-  border-left-color: #ffffff;
+  border-left-color: #adb5bd;
 }
 .dropdown-submenu.pull-left {
   float: none;
@@ -156,7 +123,7 @@ body {
 }
 </style>
 
-<script>
+<script type="text/javascript">
 // manage active state of menu based on current page
 $(document).ready(function () {
   // active menu anchor
@@ -166,11 +133,28 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark it active
-  menuAnchor.parent().addClass('active');
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
 
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
 });
 </script>
 
@@ -182,13 +166,12 @@ $(document).ready(function () {
   max-height: 500px;
   min-height: 44px;
   overflow-y: auto;
-  background: white;
   border: 1px solid #ddd;
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -196,16 +179,9 @@ $(document).ready(function () {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
+  content: "\e258";
   font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
+  border: none;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -249,7 +225,7 @@ $(document).ready(function () {
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -284,12 +260,12 @@ $(document).ready(function () {
   </div><!--/.container -->
 </div><!--/.navbar -->
 
-<div class="fluid-row" id="header">
+<div id="header">
 
 
 
 <h1 class="title toc-ignore">Videos &amp; Podcasts</h1>
-<h4 class="date">Updated on: 26 June, 2020</h4>
+<h4 class="date">Updated on: 20 January, 2025</h4>
 
 </div>
 
@@ -298,7 +274,8 @@ $(document).ready(function () {
 <div id="videos" class="section level1">
 <h1>Videos</h1>
 <p><span class="math inline">\(~\)</span></p>
-<div id="crash-course-on-algorithmic-bias-and-fairness" class="section level3">
+<div id="crash-course-on-algorithmic-bias-and-fairness"
+class="section level3">
 <h3>Crash Course on Algorithmic Bias and Fairness</h3>
 <p><span class="math inline">\(~\)</span></p>
 <iframe src="https://www.youtube.com/embed/gV0_raKR2UQ" allowfullscreen="allowfullscreen" mozallowfullscreen="mozallowfullscreen" msallowfullscreen="msallowfullscreen" oallowfullscreen="oallowfullscreen" webkitallowfullscreen="webkitallowfullscreen" frameborder="0" allow="accelerometer; autoplay; encrypted-media;     
@@ -307,8 +284,10 @@ $(document).ready(function () {
 <p><br />
 <span class="math inline">\(~\)</span></p>
 </div>
-<div id="ted-talk-how-im-fighting-bias-in-algorithms-by-joy-buolamwini" class="section level3">
-<h3>TED Talk: “How I’m fighting bias in algorithms” by Joy Buolamwini:</h3>
+<div id="ted-talk-how-im-fighting-bias-in-algorithms-by-joy-buolamwini"
+class="section level3">
+<h3>TED Talk: “How I’m fighting bias in algorithms” by Joy
+Buolamwini:</h3>
 <p><span class="math inline">\(~\)</span></p>
 <iframe src="https://www.youtube.com/embed/UG_X_7g63rY" allowfullscreen="allowfullscreen" mozallowfullscreen="mozallowfullscreen" msallowfullscreen="msallowfullscreen" oallowfullscreen="oallowfullscreen" webkitallowfullscreen="webkitallowfullscreen" frameborder="0" allow="accelerometer; autoplay; encrypted-media;     
         gyroscope; picture-in-picture" width="560" height="315">
@@ -316,8 +295,11 @@ $(document).ready(function () {
 <p><br />
 <span class="math inline">\(~\)</span></p>
 </div>
-<div id="tedx-talk-the-danger-of-predictive-algorithms-in-criminal-justice-by-hany-farid" class="section level3">
-<h3>TEDx Talk: “The danger of predictive algorithms in criminal justice” by Hany Farid:</h3>
+<div
+id="tedx-talk-the-danger-of-predictive-algorithms-in-criminal-justice-by-hany-farid"
+class="section level3">
+<h3>TEDx Talk: “The danger of predictive algorithms in criminal justice”
+by Hany Farid:</h3>
 <p><span class="math inline">\(~\)</span></p>
 <iframe src="https://www.youtube.com/embed/p-82YeUPQh0" allowfullscreen="allowfullscreen" mozallowfullscreen="mozallowfullscreen" msallowfullscreen="msallowfullscreen" oallowfullscreen="oallowfullscreen" webkitallowfullscreen="webkitallowfullscreen" frameborder="0" allow="accelerometer; autoplay; encrypted-media;     
         gyroscope; picture-in-picture" width="560" height="315">
@@ -325,7 +307,8 @@ $(document).ready(function () {
 <p><br />
 <span class="math inline">\(~\)</span></p>
 </div>
-<div id="talk-on-biased-search-engines-by-safiya-noble" class="section level3">
+<div id="talk-on-biased-search-engines-by-safiya-noble"
+class="section level3">
 <h3>Talk on biased search engines by Safiya Noble:</h3>
 <p><span class="math inline">\(~\)</span></p>
 <iframe src="https://www.youtube.com/embed/iRVZozEEWlE" allowfullscreen="allowfullscreen" mozallowfullscreen="mozallowfullscreen" msallowfullscreen="msallowfullscreen" oallowfullscreen="oallowfullscreen" webkitallowfullscreen="webkitallowfullscreen" frameborder="0" allow="accelerometer; autoplay; encrypted-media;     
@@ -334,14 +317,20 @@ $(document).ready(function () {
 <p><br />
 <span class="math inline">\(~\)</span></p>
 </div>
-<div id="tedx-talk-mapping-police-violence-by-samuel-sinyangwe-founder-of-campaign-zero" class="section level3">
-<h3>TEDx Talk: Mapping Police Violence by Samuel Sinyangwe (founder of Campaign Zero)</h3>
+<div
+id="tedx-talk-mapping-police-violence-by-samuel-sinyangwe-founder-of-campaign-zero"
+class="section level3">
+<h3>TEDx Talk: Mapping Police Violence by Samuel Sinyangwe (founder of
+Campaign Zero)</h3>
 <iframe src="https://www.youtube.com/embed/zVzGrj8HtcY" allowfullscreen="allowfullscreen" mozallowfullscreen="mozallowfullscreen" msallowfullscreen="msallowfullscreen" oallowfullscreen="oallowfullscreen" webkitallowfullscreen="webkitallowfullscreen" frameborder="0" allow="accelerometer; autoplay; encrypted-media;         gyroscope; picture-in-picture" width="560" height="315">
 </iframe>
 <p><span class="math inline">\(~\)</span></p>
 </div>
-<div id="abolish-big-data-talk-by-yeshimabeit-milner-founder-of-data-for-black-lives" class="section level3">
-<h3>“Abolish Big Data” Talk by Yeshimabeit Milner (founder of Data for Black Lives)</h3>
+<div
+id="abolish-big-data-talk-by-yeshimabeit-milner-founder-of-data-for-black-lives"
+class="section level3">
+<h3>“Abolish Big Data” Talk by Yeshimabeit Milner (founder of Data for
+Black Lives)</h3>
 <iframe src="https://www.youtube.com/embed/wR5i6qXJH4o" allowfullscreen="allowfullscreen" mozallowfullscreen="mozallowfullscreen" msallowfullscreen="msallowfullscreen" oallowfullscreen="oallowfullscreen" webkitallowfullscreen="webkitallowfullscreen" frameborder="0" allow="accelerometer; autoplay; encrypted-media;         gyroscope; picture-in-picture" width="560" height="315">
 </iframe>
 <p><span class="math inline">\(~\)</span></p>
@@ -350,34 +339,59 @@ $(document).ready(function () {
 <div id="podcasts" class="section level1">
 <h1>Podcasts</h1>
 <p><span class="math inline">\(~\)</span></p>
-<div id="recruiting-the-future-w-matt-alder-ep-164-algorithmic-bias-in-hiring" class="section level3">
-<h3>Recruiting the Future w/ Matt Alder – Ep 164: Algorithmic Bias in Hiring</h3>
-<p><a href="https://recruitingfuture.com/2019/01/ep-164-algorithmic-bias-in-hiring/">Listen here</a></p>
+<div
+id="recruiting-the-future-w-matt-alder-ep-164-algorithmic-bias-in-hiring"
+class="section level3">
+<h3>Recruiting the Future w/ Matt Alder – Ep 164: Algorithmic Bias in
+Hiring</h3>
+<p><a
+href="https://recruitingfuture.com/2019/01/ep-164-algorithmic-bias-in-hiring/">Listen
+here</a></p>
 <p><span class="math inline">\(~\)</span></p>
 </div>
 <div id="cathy-oneil-talks-biased-algorithms" class="section level3">
 <h3>Cathy O’Neil Talks Biased Algorithms</h3>
-<p><a href="https://www.wnycstudios.org/podcasts/otm/segments/biased-algorithms-biased-world">Listen here</a></p>
+<p><a
+href="https://www.wnycstudios.org/podcasts/otm/segments/biased-algorithms-biased-world">Listen
+here</a></p>
 <p><span class="math inline">\(~\)</span></p>
 </div>
-<div id="how-we-transferred-our-biases-into-our-machines-and-what-we-can-do-about-it" class="section level3">
-<h3>How We Transferred Our Biases Into Our Machines and What We Can Do About It</h3>
-<p><a href="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/358297613&amp;color=ff5500">Listen here</a></p>
+<div
+id="how-we-transferred-our-biases-into-our-machines-and-what-we-can-do-about-it"
+class="section level3">
+<h3>How We Transferred Our Biases Into Our Machines and What We Can Do
+About It</h3>
+<p><a
+href="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/358297613&amp;color=ff5500">Listen
+here</a></p>
 <p><span class="math inline">\(~\)</span></p>
 </div>
-<div id="the-rise-of-big-data-policing-with-andrew-ferguson" class="section level3">
+<div id="the-rise-of-big-data-policing-with-andrew-ferguson"
+class="section level3">
 <h3>The Rise of Big Data Policing with Andrew Ferguson</h3>
-<p><a href="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/369016508&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true&amp;visual=true">Listen here</a></p>
+<p><a
+href="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/369016508&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true&amp;visual=true">Listen
+here</a></p>
 <p><span class="math inline">\(~\)</span></p>
 </div>
-<div id="machine-learning-bias-and-fairness-with-timnit-gebru-and-margaret-mitchell" class="section level3">
-<h3>Machine Learning Bias and Fairness with Timnit Gebru and Margaret Mitchell</h3>
-<p><a href="https://www.gcppodcast.com/post/episode-114-machine-learning-bias-and-fairness-with-timnit-gebru-and-margaret-mitchell/">Listen here</a></p>
+<div
+id="machine-learning-bias-and-fairness-with-timnit-gebru-and-margaret-mitchell"
+class="section level3">
+<h3>Machine Learning Bias and Fairness with Timnit Gebru and Margaret
+Mitchell</h3>
+<p><a
+href="https://www.gcppodcast.com/post/episode-114-machine-learning-bias-and-fairness-with-timnit-gebru-and-margaret-mitchell/">Listen
+here</a></p>
 <p><span class="math inline">\(~\)</span></p>
 </div>
-<div id="weekly-economics-podcast-algorithms-of-oppression-with-author-safiya-umoja-noble" class="section level3">
-<h3>Weekly Economics Podcast: Algorithms of Oppression with author Safiya Umoja Noble</h3>
-<p><a href="https://neweconomics.org/2019/05/weekly-economics-podcast-algorithms-of-oppression-live">Listen here</a></p>
+<div
+id="weekly-economics-podcast-algorithms-of-oppression-with-author-safiya-umoja-noble"
+class="section level3">
+<h3>Weekly Economics Podcast: Algorithms of Oppression with author
+Safiya Umoja Noble</h3>
+<p><a
+href="https://neweconomics.org/2019/05/weekly-economics-podcast-algorithms-of-oppression-live">Listen
+here</a></p>
 <p><span class="math inline">\(~\)</span></p>
 </div>
 <div id="section" class="section level3">
@@ -394,7 +408,7 @@ $(document).ready(function () {
 
 // add bootstrap table styles to pandoc tables
 function bootstrapStylePandocTables() {
-  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
 }
 $(document).ready(function () {
   bootstrapStylePandocTables();
@@ -412,7 +426,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
+    $(this).parent().toggleClass('nav-tabs-open');
   });
 });
 </script>

@@ -26,4 +26,6 @@ navbar:
     href: organizations.html
   - text: "Notable People"
     href: people.html
+  - text: "Funding Opportunities"
+    href: funding.html
 

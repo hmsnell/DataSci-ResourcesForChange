@@ -13,47 +13,42 @@
 
 <title>Welcome to Data Science Resources for Change</title>
 
-<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<script src="site_libs/header-attrs-2.25/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/spacelab.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet" />
 <script src="site_libs/pagedtable-1.1/js/pagedtable.js"></script>
-<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
-<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
-
-
-
+<link href="site_libs/font-awesome-6.4.2/css/all.min.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.4.2/css/v4-shims.min.css" rel="stylesheet" />
 
 <style type="text/css">
-h1 {
-  font-size: 34px;
-}
-h1.title {
-  font-size: 38px;
-}
-h2 {
-  font-size: 30px;
-}
-h3 {
-  font-size: 24px;
-}
-h4 {
-  font-size: 18px;
-}
-h5 {
-  font-size: 16px;
-}
-h6 {
-  font-size: 12px;
-}
-.table th:not([align]) {
-  text-align: left;
-}
-</style>
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+
+
+
+
+
 
 
 
@@ -63,10 +58,6 @@ h6 {
   max-width: 940px;
   margin-left: auto;
   margin-right: auto;
-}
-code {
-  color: inherit;
-  background-color: rgba(0, 0, 0, 0.04);
 }
 img {
   max-width:100%;
@@ -83,40 +74,16 @@ button.code-folding-btn:focus {
 summary {
   display: list-item;
 }
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
 </style>
 
 
 <style type="text/css">
-/* padding for bootstrap navbar */
-body {
-  padding-top: 52px;
-  padding-bottom: 40px;
-}
-/* offset scroll position for anchor links (for fixed navbar)  */
-.section h1 {
-  padding-top: 57px;
-  margin-top: -57px;
-}
-.section h2 {
-  padding-top: 57px;
-  margin-top: -57px;
-}
-.section h3 {
-  padding-top: 57px;
-  margin-top: -57px;
-}
-.section h4 {
-  padding-top: 57px;
-  margin-top: -57px;
-}
-.section h5 {
-  padding-top: 57px;
-  margin-top: -57px;
-}
-.section h6 {
-  padding-top: 57px;
-  margin-top: -57px;
-}
 .dropdown-submenu {
   position: relative;
 }
@@ -144,7 +111,7 @@ body {
   margin-right: -10px;
 }
 .dropdown-submenu:hover>a:after {
-  border-left-color: #ffffff;
+  border-left-color: #adb5bd;
 }
 .dropdown-submenu.pull-left {
   float: none;
@@ -156,7 +123,7 @@ body {
 }
 </style>
 
-<script>
+<script type="text/javascript">
 // manage active state of menu based on current page
 $(document).ready(function () {
   // active menu anchor
@@ -166,11 +133,28 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark it active
-  menuAnchor.parent().addClass('active');
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
 
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
 });
 </script>
 
@@ -182,13 +166,12 @@ $(document).ready(function () {
   max-height: 500px;
   min-height: 44px;
   overflow-y: auto;
-  background: white;
   border: 1px solid #ddd;
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -196,16 +179,9 @@ $(document).ready(function () {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
+  content: "\e258";
   font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
+  border: none;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -249,7 +225,7 @@ $(document).ready(function () {
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -284,51 +260,100 @@ $(document).ready(function () {
   </div><!--/.container -->
 </div><!--/.navbar -->
 
-<div class="fluid-row" id="header">
+<div id="header">
 
 
 
-<h1 class="title toc-ignore">Welcome to Data Science Resources for Change</h1>
-<h4 class="date">Updated on: 26 June, 2020</h4>
+<h1 class="title toc-ignore">Welcome to Data Science Resources for
+Change</h1>
+<h4 class="date">Updated on: 20 January, 2025</h4>
 
 </div>
 
 
-<p><span class="math inline">\(~\)</span> <span class="math inline">\(~\)</span></p>
-<div id="about-this-site-a-note-from-its-creators" class="section level1">
+<p><span class="math inline">\(~\)</span> <span
+class="math inline">\(~\)</span></p>
+<div id="about-this-site-a-note-from-its-creators"
+class="section level1">
 <h1>About This Site: A Note From Its Creators</h1>
 <p><span class="math inline">\(~\)</span></p>
-<p>Racism and bias exist everywhere, though it is not always obvious at first glance.</p>
-<p>This is particularly true in the field of data science. Due to their mathematical nature, data and algorithms are often treated as objective and unbiased when–in many cases–they are not. It can be easy to put trust in them; many people blindly support algorithms with little consideration of how they were created and how they operate in society.</p>
-<p><strong>In order to be thoughtful, effective, and inclusive data scientists, we believe it is important to understand the ways in which bias can play a dangerous role within our field, to understand the ways in which data can be used to either reinforce/exacerbate or fight oppression, and to support the inclusion of voices of color within the community.</strong></p>
-<p>Although these issues play a significant role in the discussion of data science in the media, very few classes at the undergraduate level cover them in detail. The few courses and projects we have been a part of that covered some of these topics have been fascinating and impactful to the way that we think about data science and our roles within the field. We wanted to create this site as a way to increase exposure to these ideas, spark constructive discussions, and help provide our fellow Smithies with knowledge and tools that can provide benefits long after graduation!</p>
-<p><strong>This site is meant to serve as a resource for Smithies of all backgrounds who are interested in pursuing a future in statistical data sciences and want to learn more about these topics.</strong></p>
-<p>We have started a collection of different materials, from books and articles to videos, podcasts, and organizations to support, on the following topics revolving around data and race:</p>
+<p>Racism and bias exist everywhere, though it is not always obvious at
+first glance.</p>
+<p>This is particularly true in the field of data science. Due to their
+mathematical nature, data and algorithms are often treated as objective
+and unbiased when–in many cases–they are not. It can be easy to put
+trust in them; many people blindly support algorithms with little
+consideration of how they were created and how they operate in
+society.</p>
+<p><strong>In order to be thoughtful, effective, and inclusive data
+scientists, we believe it is important to understand the ways in which
+bias can play a dangerous role within our field, to understand the ways
+in which data can be used to either reinforce/exacerbate or fight
+oppression, and to support the inclusion of voices of color within the
+community.</strong></p>
+<p>Although these issues play a significant role in the discussion of
+data science in the media, very few classes at the undergraduate level
+cover them in detail. The few courses and projects we have been a part
+of that covered some of these topics have been fascinating and impactful
+to the way that we think about data science and our roles within the
+field. We wanted to create this site as a way to increase exposure to
+these ideas, spark constructive discussions, and help provide our fellow
+Smithies with knowledge and tools that can provide benefits long after
+graduation!</p>
+<p><strong>This site is meant to serve as a resource for Smithies of all
+backgrounds who are interested in pursuing a future in statistical data
+sciences and want to learn more about these topics.</strong></p>
+<p>We have started a collection of different materials, from books and
+articles to videos, podcasts, and organizations to support, on the
+following topics revolving around data and race:</p>
 <ol style="list-style-type: decimal">
 <li><p>Algorithmic bias</p></li>
 <li><p>Data in the criminal justice system</p></li>
 <li><p>Diversity within the data science community</p></li>
 </ol>
-<p>For those who are just beginning to dip their toes into these ideas, we hope that this site will provide a starting point to your educational journey, encouraging you to seek out further information and think about these ideas more in the future. For those who live these struggles every day, we hope that you can find something here you have not read or seen before, but also that you can find value through sharing these resources with others.</p>
-<p>As young, white students with next to no personal experience in this area, we do not want our voices to drown out those of others who may have valuable perspectives. We have attempted to promote content and organizations created by a diverse group of voices, but also acknowledge that our knowledge on the topic is limited.</p>
-<p><strong>We believe it is important for this educational process to be interactive and to include the voices of marginalized students within our community.</strong> To promote this goal, we have create a content submission form where you can suggest additional resources that you think would be meaningful to share with your peers.</p>
+<p>For those who are just beginning to dip their toes into these ideas,
+we hope that this site will provide a starting point to your educational
+journey, encouraging you to seek out further information and think about
+these ideas more in the future. For those who live these struggles every
+day, we hope that you can find something here you have not read or seen
+before, but also that you can find value through sharing these resources
+with others.</p>
+<p>As young, white students with next to no personal experience in this
+area, we do not want our voices to drown out those of others who may
+have valuable perspectives. We have attempted to promote content and
+organizations created by a diverse group of voices, but also acknowledge
+that our knowledge on the topic is limited.</p>
+<p><strong>We believe it is important for this educational process to be
+interactive and to include the voices of marginalized students within
+our community.</strong> To promote this goal, we have create a content
+submission form where you can suggest additional resources that you
+think would be meaningful to share with your peers.</p>
 <p><span class="math inline">\(~\)</span></p>
 <div id="suggest-a-resource-here" class="section level3">
 <h3>Suggest a resource here!</h3>
-<p><a href="https://forms.gle/w76mrUjqKtcojfCZA" class="uri">https://forms.gle/w76mrUjqKtcojfCZA</a></p>
+<p><a href="https://forms.gle/w76mrUjqKtcojfCZA"
+class="uri">https://forms.gle/w76mrUjqKtcojfCZA</a></p>
 <p><span class="math inline">\(~\)</span></p>
-<p><strong>Additionally, we understand that our experiences may affect the way we choose to present information, perhaps resulting in an unbalanced perspective.</strong> We will happily welcome your feedback on how to improve this site and ensure that the content shared here is authentic.</p>
+<p><strong>Additionally, we understand that our experiences may affect
+the way we choose to present information, perhaps resulting in an
+unbalanced perspective.</strong> We will happily welcome your feedback
+on how to improve this site and ensure that the content shared here is
+authentic.</p>
 <p><span class="math inline">\(~\)</span></p>
 </div>
 <div id="share-feedback-here" class="section level3">
 <h3>Share feedback here!</h3>
-<p><a href="https://forms.gle/TXNiin6KYNLSG7Rp9" class="uri">https://forms.gle/TXNiin6KYNLSG7Rp9</a></p>
+<p><a href="https://forms.gle/TXNiin6KYNLSG7Rp9"
+class="uri">https://forms.gle/TXNiin6KYNLSG7Rp9</a></p>
 <p><span class="math inline">\(~\)</span></p>
-<p>– <em>Audrey Bertin and Hannah Snell, ’21</em> [Creators of Data Science Resources for Change]</p>
+<p>– <em>Audrey Bertin and Hannah Snell, ’21</em> [Creators of Data
+Science Resources for Change]</p>
 <p><span class="math inline">\(~\)</span></p>
 </div>
-<div id="we-hope-you-bookmark-share-and-reference-this-site-often." class="section level3">
-<h3><em>We hope you bookmark, share, and reference this site often.</em></h3>
+<div id="we-hope-you-bookmark-share-and-reference-this-site-often."
+class="section level3">
+<h3><em>We hope you bookmark, share, and reference this site
+often.</em></h3>
 </div>
 </div>
 
@@ -341,7 +366,7 @@ $(document).ready(function () {
 
 // add bootstrap table styles to pandoc tables
 function bootstrapStylePandocTables() {
-  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
 }
 $(document).ready(function () {
   bootstrapStylePandocTables();
@@ -359,7 +384,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
+    $(this).parent().toggleClass('nav-tabs-open');
   });
 });
 </script>

@@ -13,47 +13,42 @@
 
 <title>Organizations to Support</title>
 
-<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<script src="site_libs/header-attrs-2.25/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/spacelab.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet" />
 <script src="site_libs/pagedtable-1.1/js/pagedtable.js"></script>
-<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
-<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
-
-
-
+<link href="site_libs/font-awesome-6.4.2/css/all.min.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.4.2/css/v4-shims.min.css" rel="stylesheet" />
 
 <style type="text/css">
-h1 {
-  font-size: 34px;
-}
-h1.title {
-  font-size: 38px;
-}
-h2 {
-  font-size: 30px;
-}
-h3 {
-  font-size: 24px;
-}
-h4 {
-  font-size: 18px;
-}
-h5 {
-  font-size: 16px;
-}
-h6 {
-  font-size: 12px;
-}
-.table th:not([align]) {
-  text-align: left;
-}
-</style>
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+
+
+
+
+
 
 
 
@@ -63,10 +58,6 @@ h6 {
   max-width: 940px;
   margin-left: auto;
   margin-right: auto;
-}
-code {
-  color: inherit;
-  background-color: rgba(0, 0, 0, 0.04);
 }
 img {
   max-width:100%;
@@ -83,40 +74,16 @@ button.code-folding-btn:focus {
 summary {
   display: list-item;
 }
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
 </style>
 
 
 <style type="text/css">
-/* padding for bootstrap navbar */
-body {
-  padding-top: 52px;
-  padding-bottom: 40px;
-}
-/* offset scroll position for anchor links (for fixed navbar)  */
-.section h1 {
-  padding-top: 57px;
-  margin-top: -57px;
-}
-.section h2 {
-  padding-top: 57px;
-  margin-top: -57px;
-}
-.section h3 {
-  padding-top: 57px;
-  margin-top: -57px;
-}
-.section h4 {
-  padding-top: 57px;
-  margin-top: -57px;
-}
-.section h5 {
-  padding-top: 57px;
-  margin-top: -57px;
-}
-.section h6 {
-  padding-top: 57px;
-  margin-top: -57px;
-}
 .dropdown-submenu {
   position: relative;
 }
@@ -144,7 +111,7 @@ body {
   margin-right: -10px;
 }
 .dropdown-submenu:hover>a:after {
-  border-left-color: #ffffff;
+  border-left-color: #adb5bd;
 }
 .dropdown-submenu.pull-left {
   float: none;
@@ -156,7 +123,7 @@ body {
 }
 </style>
 
-<script>
+<script type="text/javascript">
 // manage active state of menu based on current page
 $(document).ready(function () {
   // active menu anchor
@@ -166,11 +133,28 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark it active
-  menuAnchor.parent().addClass('active');
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
 
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
 });
 </script>
 
@@ -182,13 +166,12 @@ $(document).ready(function () {
   max-height: 500px;
   min-height: 44px;
   overflow-y: auto;
-  background: white;
   border: 1px solid #ddd;
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -196,16 +179,9 @@ $(document).ready(function () {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
+  content: "\e258";
   font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
+  border: none;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -249,7 +225,7 @@ $(document).ready(function () {
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -284,48 +260,86 @@ $(document).ready(function () {
   </div><!--/.container -->
 </div><!--/.navbar -->
 
-<div class="fluid-row" id="header">
+<div id="header">
 
 
 
 <h1 class="title toc-ignore">Organizations to Support</h1>
-<h4 class="date">Updated on: 26 June, 2020</h4>
+<h4 class="date">Updated on: 20 January, 2025</h4>
 
 </div>
 
 
 <p><span class="math inline">\(~\)</span></p>
-<p>If you’re looking for some organizations to support or learn more about, here are some excellent ones. The groups listed below either use data to promote equality or provide opportunities to increase and support diversity in the mathematics/data science world. If you have the means, consider donating or volunteering!</p>
+<p>If you’re looking for some organizations to support or learn more
+about, here are some excellent ones. The groups listed below either use
+data to promote equality or provide opportunities to increase and
+support diversity in the mathematics/data science world. If you have the
+means, consider donating or volunteering!</p>
 <p><span class="math inline">\(~\)</span></p>
-<p>The <strong>Algorithmic Justice League</strong> combines “art and research to illuminate the social implications and harms of AI.”<br />
-<a href="https://www.ajlunited.org/" class="uri">https://www.ajlunited.org/</a></p>
+<p>The <strong>Algorithmic Justice League</strong> combines “art and
+research to illuminate the social implications and harms of AI.”<br />
+<a href="https://www.ajlunited.org/"
+class="uri">https://www.ajlunited.org/</a></p>
 <p><span class="math inline">\(~\)</span></p>
-<p><strong>Black Girls Code</strong> works “to increase the number of women of color in the digital space by empowering girls of color ages 7 to 17 to become innovators in STEM fields, leaders in their communities, and builders of their own futures through exposure to computer science and technology.”<br />
-<a href="https://www.blackgirlscode.com" class="uri">https://www.blackgirlscode.com</a></p>
+<p><strong>Black Girls Code</strong> works “to increase the number of
+women of color in the digital space by empowering girls of color ages 7
+to 17 to become innovators in STEM fields, leaders in their communities,
+and builders of their own futures through exposure to computer science
+and technology.”<br />
+<a href="https://www.blackgirlscode.com"
+class="uri">https://www.blackgirlscode.com</a></p>
 <p><span class="math inline">\(~\)</span></p>
-<p><strong>Black in AI</strong> is an “initiative creating a space for sharing ideas, fostering collaborations, and discussing initiatives to increase the presence of Black individuals in the field of AI.”<br />
-<a href="https://blackinai.github.io" class="uri">https://blackinai.github.io</a></p>
+<p><strong>Black in AI</strong> is an “initiative creating a space for
+sharing ideas, fostering collaborations, and discussing initiatives to
+increase the presence of Black individuals in the field of AI.”<br />
+<a href="https://blackinai.github.io"
+class="uri">https://blackinai.github.io</a></p>
 <p><span class="math inline">\(~\)</span></p>
-<p><strong>Campaign Zero</strong> focuses on data analysis related to policing practices, working to use data to identify and promote legislation to end police violence.<br />
-<a href="https://www.joincampaignzero.org/#vision" class="uri">https://www.joincampaignzero.org/#vision</a></p>
+<p><strong>Campaign Zero</strong> focuses on data analysis related to
+policing practices, working to use data to identify and promote
+legislation to end police violence.<br />
+<a href="https://www.joincampaignzero.org/#vision"
+class="uri">https://www.joincampaignzero.org/#vision</a></p>
 <p><span class="math inline">\(~\)</span></p>
-<p><strong>Code the Dream</strong> offers free intensive training in software development to people from diverse low-income backgrounds.<br />
-<a href="https://www.codethedream.org" class="uri">https://www.codethedream.org</a></p>
+<p><strong>Code the Dream</strong> offers free intensive training in
+software development to people from diverse low-income
+backgrounds.<br />
+<a href="https://www.codethedream.org"
+class="uri">https://www.codethedream.org</a></p>
 <p><span class="math inline">\(~\)</span></p>
-<p><strong>Data For Black Lives</strong> uses data science to try and “create concrete and measurable change in the lives of Black people.”<br />
+<p><strong>Data For Black Lives</strong> uses data science to try and
+“create concrete and measurable change in the lives of Black
+people.”<br />
 <a href="http://d4bl.org" class="uri">http://d4bl.org</a></p>
 <p><span class="math inline">\(~\)</span></p>
-<p><strong>The Math Alliance</strong> is a community working to “increase the number of doctoral degrees in the mathematical sciences among groups that have been traditionally underrepresented in those fields,” help underrepresented students get placed into better programs and find jobs as professors, and foster a diverse workforce in the mathematical sciences.<br />
-<a href="https://mathalliance.org/goals/" class="uri">https://mathalliance.org/goals/</a></p>
+<p><strong>The Math Alliance</strong> is a community working to
+“increase the number of doctoral degrees in the mathematical sciences
+among groups that have been traditionally underrepresented in those
+fields,” help underrepresented students get placed into better programs
+and find jobs as professors, and foster a diverse workforce in the
+mathematical sciences.<br />
+<a href="https://mathalliance.org/goals/"
+class="uri">https://mathalliance.org/goals/</a></p>
 <p><span class="math inline">\(~\)</span></p>
-<p><strong>Mathematically Gifted and Black</strong> works to “highlight the work and lives of established mathematicians in the African Diaspora” and “support the next generation of these mathematicians.” Donations go directly to supporting predoctoral Black students with pursuing career goals in math.<br />
-<a href="https://mathematicallygiftedandblack.com" class="uri">https://mathematicallygiftedandblack.com</a></p>
+<p><strong>Mathematically Gifted and Black</strong> works to “highlight
+the work and lives of established mathematicians in the African
+Diaspora” and “support the next generation of these mathematicians.”
+Donations go directly to supporting predoctoral Black students with
+pursuing career goals in math.<br />
+<a href="https://mathematicallygiftedandblack.com"
+class="uri">https://mathematicallygiftedandblack.com</a></p>
 <p><span class="math inline">\(~\)</span></p>
-<p><strong>Rewriting the Code</strong> works to provide a community for Black women in tech to share experiences and perspectives, gain career advice, and connect with companies to find work.<br />
-<a href="https://rewritingthecode.org/black-wings/" class="uri">https://rewritingthecode.org/black-wings/</a></p>
+<p><strong>Rewriting the Code</strong> works to provide a community for
+Black women in tech to share experiences and perspectives, gain career
+advice, and connect with companies to find work.<br />
+<a href="https://rewritingthecode.org/black-wings/"
+class="uri">https://rewritingthecode.org/black-wings/</a></p>
 <p><span class="math inline">\(~\)</span></p>
-<p><strong>We Rep STEM</strong> works “to promote a love of learning while celebrating underrepresented groups in the STEM community.”<br />
-<a href="https://werepstem.com" class="uri">https://werepstem.com</a></p>
+<p><strong>We Rep STEM</strong> works “to promote a love of learning
+while celebrating underrepresented groups in the STEM community.”<br />
+<a href="https://werepstem.com"
+class="uri">https://werepstem.com</a></p>
 <p><span class="math inline">\(~\)</span></p>
 
 
@@ -337,7 +351,7 @@ $(document).ready(function () {
 
 // add bootstrap table styles to pandoc tables
 function bootstrapStylePandocTables() {
-  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
 }
 $(document).ready(function () {
   bootstrapStylePandocTables();
@@ -355,7 +369,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
+    $(this).parent().toggleClass('nav-tabs-open');
   });
 });
 </script>
